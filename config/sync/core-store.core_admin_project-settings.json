@@ -1,0 +1,18 @@
+{
+  "key": "core_admin_project-settings",
+  "value": {
+    "menuLogo": {
+      "name": "favicon.png",
+      "hash": "favicon_4c4945e0cb",
+      "url": "/uploads/favicon_4c4945e0cb.png",
+      "width": 513,
+      "height": 513,
+      "ext": ".png",
+      "size": 42.28,
+      "provider": "local"
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

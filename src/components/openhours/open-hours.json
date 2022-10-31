@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_openhours_open_hours",
+  "info": {
+    "displayName": "Open Hours",
+    "icon": "calendar-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "day_interval": {
+      "type": "string",
+      "required": false
+    },
+    "opening_hour": {
+      "type": "string"
+    },
+    "closing_hour": {
+      "type": "string"
+    }
+  }
+}

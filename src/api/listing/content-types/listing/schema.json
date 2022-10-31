@@ -124,6 +124,32 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "listings"
+    },
+    "Hours": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "openhours.open-hours"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "listing"
+    },
+    "_geo": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "location.geo"
     }
   }
 }

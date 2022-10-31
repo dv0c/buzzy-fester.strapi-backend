@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_location_geos",
+  "info": {
+    "displayName": "geoLoc",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "lng": {
+      "type": "float"
+    },
+    "lat": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Authenticated",
+  "description": "Default role given to authenticated user.",
+  "type": "authenticated",
+  "permissions": [
+    {
+      "action": "api::listing.listing.create"
+    },
+    {
+      "action": "api::listing.listing.delete"
+    },
+    {
+      "action": "api::listing.listing.find"
+    },
+    {
+      "action": "api::listing.listing.findOne"
+    },
+    {
+      "action": "api::listing.listing.update"
+    },
+    {
+      "action": "plugin::users-permissions.auth.changePassword"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}

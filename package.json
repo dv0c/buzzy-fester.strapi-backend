@@ -7,14 +7,18 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "cs": "config-sync"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.3.8",
-    "@strapi/plugin-users-permissions": "4.3.8",
-    "@strapi/strapi": "4.3.8",
+    "@strapi/plugin-i18n": "4.4.1",
+    "@strapi/plugin-users-permissions": "4.4.1",
+    "@strapi/strapi": "4.4.1",
     "better-sqlite3": "7.4.6",
+    "mysql": "^2.18.1",
     "sharp": "^0.31.0",
+    "strapi-plugin-config-sync": "^1.0.4",
+    "strapi-plugin-meilisearch": "^0.7.1",
     "strapi-plugin-populate-deep": "^0.1.2",
     "strapi-utils": "^3.6.10"
   },

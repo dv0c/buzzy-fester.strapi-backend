@@ -66,7 +66,7 @@
     "avatar": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -76,6 +76,25 @@
       "relation": "oneToMany",
       "target": "api::listing.listing",
       "mappedBy": "user"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "users_permissions_user"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string",
+      "maxLength": 14
+    },
+    "phone": {
+      "type": "string"
     }
   }
 }
