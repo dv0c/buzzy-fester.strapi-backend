@@ -1,12 +1,27 @@
 module.exports = ({ env }) => ({
+  upload: {
+    config: {
+      provider: 'cloudinary',
+      providerOptions: {
+        cloud_name: env('CLOUDINARY_NAME'),
+        api_key: env('CLOUDINARY_KEY'),
+        api_secret: env('CLOUDINARY_SECRET'),
+      },
+      actionOptions: {
+        upload: {},
+        uploadStream: {},
+        delete: {},
+      },
+    },
+  },
   'users-permissions': {
     config: {
       jwt: {
         expiresIn: '3d',
       },
       ratelimit: {
-        interval: 60000,
-        max: 100000000
+        interval: 100,
+        max: 100
       },
     },
   },
