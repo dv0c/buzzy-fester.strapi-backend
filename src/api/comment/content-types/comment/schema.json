@@ -4,7 +4,8 @@
   "info": {
     "singularName": "comment",
     "pluralName": "comments",
-    "displayName": "comments"
+    "displayName": "comments",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,7 +28,7 @@
       "target": "api::listing.listing",
       "inversedBy": "comments"
     },
-    "users_permissions_user": {
+    "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",

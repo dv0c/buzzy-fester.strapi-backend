@@ -77,12 +77,6 @@
       "target": "api::listing.listing",
       "mappedBy": "user"
     },
-    "comments": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::comment.comment",
-      "mappedBy": "users_permissions_user"
-    },
     "first_name": {
       "type": "string"
     },
@@ -95,6 +89,12 @@
     },
     "phone": {
       "type": "string"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

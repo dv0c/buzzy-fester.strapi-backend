@@ -135,12 +135,6 @@
       },
       "component": "openhours.open-hours"
     },
-    "comments": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::comment.comment",
-      "mappedBy": "listing"
-    },
     "_geo": {
       "type": "component",
       "repeatable": false,
@@ -150,6 +144,12 @@
         }
       },
       "component": "location.geo"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "listing"
     }
   }
 }
